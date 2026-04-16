@@ -1,0 +1,352 @@
+2026-04-16 11:49:25,769 [INFO] 🚀 Initializing CompliAgent
+2026-04-16 11:49:25,769 [INFO]    📄 Policy: dummy.pdf
+2026-04-16 11:49:25,769 [INFO]    🌐 Regulation Source: AMF
+2026-04-16 11:49:25,769 [INFO]    💾 GPU: CPU (0GB VRAM)
+2026-04-16 11:49:25,769 [INFO]    🤖 Model: Llama-3-8B-Instruct
+2026-04-16 11:49:25,769 [WARNING] ⚠️ No GPU detected. Running in CPU fallback mode (slow).
+2026-04-16 11:49:25,769 [INFO] ============================================================
+2026-04-16 11:49:25,769 [INFO] 🔄 Starting Compliance Workflow
+2026-04-16 11:49:25,769 [INFO] ============================================================
+2026-04-16 11:49:25,770 [INFO] 
+📡 Step 1/4: Scraping AMF regulations...
+2026-04-16 11:49:25,770 [INFO]    [DEMO MODE] Using mocked regulations
+2026-04-16 11:49:25,783 [INFO] ✅ Step 'scrape' logged to audit trail
+2026-04-16 11:49:25,783 [INFO]    ✅ Found 2 recent regulations
+2026-04-16 11:49:25,783 [INFO] 
+📚 Step 2/4: Ingesting policy into RAG pipeline...
+2026-04-16 11:49:25,783 [ERROR] ❌ Workflow failed: Policy file not found: dummy.pdf
+Traceback (most recent call last):
+  File "/workspace/src/main.py", line 192, in run
+    raise FileNotFoundError(f"Policy file not found: {self.policy_path}")
+FileNotFoundError: Policy file not found: dummy.pdf
+2026-04-16 11:49:25,785 [INFO] ✅ Step 'error' logged to audit trail
+2026-04-16 11:49:42,289 [INFO] 🚀 Initializing CompliAgent
+2026-04-16 11:49:42,290 [INFO]    📄 Policy: data/sample_policy.pdf
+2026-04-16 11:49:42,290 [INFO]    🌐 Regulation Source: AMF
+2026-04-16 11:49:42,290 [INFO]    💾 GPU: CPU (0GB VRAM)
+2026-04-16 11:49:42,290 [INFO]    🤖 Model: Llama-3-8B-Instruct
+2026-04-16 11:49:42,290 [WARNING] ⚠️ No GPU detected. Running in CPU fallback mode (slow).
+2026-04-16 11:49:42,290 [INFO] ============================================================
+2026-04-16 11:49:42,290 [INFO] 🔄 Starting Compliance Workflow
+2026-04-16 11:49:42,290 [INFO] ============================================================
+2026-04-16 11:49:42,290 [INFO] 
+📡 Step 1/4: Scraping AMF regulations...
+2026-04-16 11:49:42,290 [INFO]    [DEMO MODE] Using mocked regulations
+2026-04-16 11:49:42,293 [INFO] ✅ Step 'scrape' logged to audit trail
+2026-04-16 11:49:42,293 [INFO]    ✅ Found 2 recent regulations
+2026-04-16 11:49:42,293 [INFO] 
+📚 Step 2/4: Ingesting policy into RAG pipeline...
+2026-04-16 11:49:42,293 [INFO]    [DEMO MODE] Using mocked policy chunks
+2026-04-16 11:49:42,294 [INFO] ✅ Step 'rag_ingest' logged to audit trail
+2026-04-16 11:49:42,294 [INFO]    ✅ Indexed 3 policy chunks
+2026-04-16 11:49:42,294 [INFO] 
+🔍 Step 3/4: Analyzing compliance gaps with Llama-3-8B...
+2026-04-16 11:49:42,294 [INFO]    [DEMO MODE] Using mocked analysis
+2026-04-16 11:49:43,294 [ERROR] ❌ Workflow failed: cannot access local variable 'context' where it is not associated with a value
+Traceback (most recent call last):
+  File "/workspace/src/main.py", line 233, in run
+    {"regulations_count": len(regulations), "context_chunks": len(context)},
+                                                                  ^^^^^^^
+UnboundLocalError: cannot access local variable 'context' where it is not associated with a value
+2026-04-16 11:49:43,296 [INFO] ✅ Step 'error' logged to audit trail
+2026-04-16 11:50:01,683 [INFO] 🚀 Initializing CompliAgent
+2026-04-16 11:50:01,683 [INFO]    📄 Policy: data/sample_policy.pdf
+2026-04-16 11:50:01,683 [INFO]    🌐 Regulation Source: AMF
+2026-04-16 11:50:01,683 [INFO]    💾 GPU: CPU (0GB VRAM)
+2026-04-16 11:50:01,683 [INFO]    🤖 Model: Llama-3-8B-Instruct
+2026-04-16 11:50:01,683 [WARNING] ⚠️ No GPU detected. Running in CPU fallback mode (slow).
+2026-04-16 11:50:01,684 [INFO] ============================================================
+2026-04-16 11:50:01,684 [INFO] 🔄 Starting Compliance Workflow
+2026-04-16 11:50:01,684 [INFO] ============================================================
+2026-04-16 11:50:01,684 [INFO] 
+📡 Step 1/4: Scraping AMF regulations...
+2026-04-16 11:50:01,684 [INFO]    [DEMO MODE] Using mocked regulations
+2026-04-16 11:50:01,685 [INFO] ✅ Step 'scrape' logged to audit trail
+2026-04-16 11:50:01,685 [INFO]    ✅ Found 2 recent regulations
+2026-04-16 11:50:01,685 [INFO] 
+📚 Step 2/4: Ingesting policy into RAG pipeline...
+2026-04-16 11:50:01,685 [INFO]    [DEMO MODE] Using mocked policy chunks
+2026-04-16 11:50:01,686 [INFO] ✅ Step 'rag_ingest' logged to audit trail
+2026-04-16 11:50:01,686 [INFO]    ✅ Indexed 3 policy chunks
+2026-04-16 11:50:01,686 [INFO] 
+🔍 Step 3/4: Analyzing compliance gaps with Llama-3-8B...
+2026-04-16 11:50:01,686 [INFO]    [DEMO MODE] Using mocked policy chunks
+2026-04-16 11:50:01,686 [INFO]    [DEMO MODE] Using mocked analysis
+2026-04-16 11:50:02,688 [INFO] ✅ Step 'analyze' logged to audit trail
+2026-04-16 11:50:02,688 [INFO]    ✅ Analysis complete (confidence: 0.92)
+2026-04-16 11:50:02,688 [INFO] 
+📄 Step 4/4: Generating compliance report...
+2026-04-16 11:50:02,688 [INFO]    [DEMO MODE] Generating mocked report
+2026-04-16 11:50:02,689 [INFO] ✅ Step 'report_generation' logged to audit trail
+2026-04-16 11:50:02,689 [INFO] 
+============================================================
+2026-04-16 11:50:02,689 [INFO] 🎉 Compliance Workflow Complete!
+2026-04-16 11:50:02,689 [INFO]    ⏱️ Total time: 1.01s
+2026-04-16 11:50:02,689 [INFO]    📄 Report: reports/compliance_report_AMF_20260416_115002.md
+2026-04-16 11:50:02,689 [INFO]    🔍 Audit Trail: reports/compliance_report_AMF_20260416_115002_audit.json
+2026-04-16 11:50:02,689 [INFO] ============================================================
+2026-04-16 11:52:04,205 [INFO] 🚀 Initializing CompliAgent
+2026-04-16 11:52:04,206 [INFO]    📄 Policy: data/sample_policy.pdf
+2026-04-16 11:52:04,207 [INFO]    🌐 Regulation Source: ECB
+2026-04-16 11:52:04,207 [INFO]    💾 GPU: CPU (0GB VRAM)
+2026-04-16 11:52:04,207 [INFO]    🤖 Model: Llama-3-8B-Instruct
+2026-04-16 11:52:04,207 [WARNING] ⚠️ No GPU detected. Running in CPU fallback mode (slow).
+2026-04-16 11:52:04,207 [INFO] ============================================================
+2026-04-16 11:52:04,207 [INFO] 🔄 Starting Compliance Workflow
+2026-04-16 11:52:04,207 [INFO] ============================================================
+2026-04-16 11:52:04,207 [INFO] 
+📡 Step 1/4: Scraping ECB regulations...
+2026-04-16 11:52:04,207 [INFO]    [DEMO MODE] Using mocked regulations
+2026-04-16 11:52:04,209 [INFO] ✅ Step 'scrape' logged to audit trail
+2026-04-16 11:52:04,209 [INFO]    ✅ Found 2 recent regulations
+2026-04-16 11:52:04,209 [INFO] 
+📚 Step 2/4: Ingesting policy into RAG pipeline...
+2026-04-16 11:52:04,209 [INFO]    [DEMO MODE] Using mocked policy chunks
+2026-04-16 11:52:04,222 [INFO] ✅ Step 'rag_ingest' logged to audit trail
+2026-04-16 11:52:04,222 [INFO]    ✅ Indexed 3 policy chunks
+2026-04-16 11:52:04,222 [INFO] 
+🔍 Step 3/4: Analyzing compliance gaps with Llama-3-8B...
+2026-04-16 11:52:04,223 [INFO]    [DEMO MODE] Using mocked policy chunks
+2026-04-16 11:52:04,223 [INFO]    [DEMO MODE] Using mocked analysis
+2026-04-16 11:52:05,226 [INFO] ✅ Step 'analyze' logged to audit trail
+2026-04-16 11:52:05,226 [INFO]    ✅ Analysis complete (confidence: 0.92)
+2026-04-16 11:52:05,226 [INFO] 
+📄 Step 4/4: Generating compliance report...
+2026-04-16 11:52:05,226 [INFO]    [DEMO MODE] Generating mocked report
+2026-04-16 11:52:05,228 [INFO] ✅ Step 'report_generation' logged to audit trail
+2026-04-16 11:52:05,228 [INFO] 
+============================================================
+2026-04-16 11:52:05,228 [INFO] 🎉 Compliance Workflow Complete!
+2026-04-16 11:52:05,229 [INFO]    ⏱️ Total time: 1.02s
+2026-04-16 11:52:05,229 [INFO]    📄 Report: reports/compliance_report_ECB_20260416_115205.md
+2026-04-16 11:52:05,229 [INFO]    🔍 Audit Trail: reports/compliance_report_ECB_20260416_115205_audit.json
+2026-04-16 11:52:05,229 [INFO] ============================================================
+2026-04-16 11:52:22,028 [INFO] 🚀 Initializing CompliAgent
+2026-04-16 11:52:22,028 [INFO]    📄 Policy: data/sample_policy.pdf
+2026-04-16 11:52:22,028 [INFO]    🌐 Regulation Source: DORA
+2026-04-16 11:52:22,028 [INFO]    💾 GPU: CPU (0GB VRAM)
+2026-04-16 11:52:22,028 [INFO]    🤖 Model: Llama-3-8B-Instruct
+2026-04-16 11:52:22,028 [WARNING] ⚠️ No GPU detected. Running in CPU fallback mode (slow).
+2026-04-16 13:38:12,140 [INFO] 🚀 Initializing CompliAgent
+2026-04-16 13:38:12,141 [INFO]    📄 Policy: data/sample_policy.pdf
+2026-04-16 13:38:12,141 [INFO]    🌐 Regulation Source: ECB
+2026-04-16 13:38:12,141 [INFO]    💾 GPU: CPU (0GB VRAM)
+2026-04-16 13:38:12,141 [INFO]    🤖 Model: Llama-3-8B-Instruct
+2026-04-16 13:38:12,141 [WARNING] ⚠️ No GPU detected. Running in CPU fallback mode (slow).
+2026-04-16 13:38:12,141 [INFO] ============================================================
+2026-04-16 13:38:12,142 [INFO] 🔄 Starting Compliance Workflow
+2026-04-16 13:38:12,142 [INFO] ============================================================
+2026-04-16 13:38:12,142 [INFO] 
+📡 Step 1/4: Scraping ECB regulations...
+2026-04-16 13:38:12,142 [INFO]    [DEMO MODE] Using mocked regulations
+2026-04-16 13:38:12,143 [INFO] ✅ Step 'scrape' logged to audit trail
+2026-04-16 13:38:12,143 [INFO]    ✅ Found 2 recent regulations
+2026-04-16 13:38:12,144 [INFO] 
+📚 Step 2/4: Ingesting policy into RAG pipeline...
+2026-04-16 13:38:12,144 [INFO]    [DEMO MODE] Using mocked policy chunks
+2026-04-16 13:38:12,145 [INFO] ✅ Step 'rag_ingest' logged to audit trail
+2026-04-16 13:38:12,145 [INFO]    ✅ Indexed 3 policy chunks
+2026-04-16 13:38:12,145 [INFO] 
+🔍 Step 3/4: Analyzing compliance gaps with Llama-3-8B...
+2026-04-16 13:38:12,145 [INFO]    [DEMO MODE] Using mocked policy chunks
+2026-04-16 13:38:12,145 [INFO]    [DEMO MODE] Using mocked analysis
+2026-04-16 13:38:13,147 [INFO] ✅ Step 'analyze' logged to audit trail
+2026-04-16 13:38:13,147 [INFO]    ✅ Analysis complete (confidence: 0.92)
+2026-04-16 13:38:13,147 [INFO] 
+📄 Step 4/4: Generating compliance report...
+2026-04-16 13:38:13,147 [INFO]    [DEMO MODE] Generating mocked report
+2026-04-16 13:38:13,148 [INFO] ✅ Step 'report_generation' logged to audit trail
+2026-04-16 13:38:13,148 [INFO] 
+============================================================
+2026-04-16 13:38:13,148 [INFO] 🎉 Compliance Workflow Complete!
+2026-04-16 13:38:13,148 [INFO]    ⏱️ Total time: 1.01s
+2026-04-16 13:38:13,149 [INFO]    📄 Report: reports/compliance_report_ECB_20260416_133813.md
+2026-04-16 13:38:13,149 [INFO]    🔍 Audit Trail: reports/compliance_report_ECB_20260416_133813_audit.json
+2026-04-16 13:38:13,149 [INFO] ============================================================
+2026-04-16 13:38:43,926 [INFO] 🚀 Initializing CompliAgent
+2026-04-16 13:38:43,926 [INFO]    📄 Policy: data/sample_policy.pdf
+2026-04-16 13:38:43,927 [INFO]    🌐 Regulation Source: AMF
+2026-04-16 13:38:43,927 [INFO]    💾 GPU: CPU (0GB VRAM)
+2026-04-16 13:38:43,927 [INFO]    🤖 Model: Llama-3-8B-Instruct
+2026-04-16 13:38:43,927 [WARNING] ⚠️ No GPU detected. Running in CPU fallback mode (slow).
+2026-04-16 13:38:43,927 [INFO] ============================================================
+2026-04-16 13:38:43,927 [INFO] 🔄 Starting Compliance Workflow
+2026-04-16 13:38:43,927 [INFO] ============================================================
+2026-04-16 13:38:43,927 [INFO] 
+📡 Step 1/4: Scraping AMF regulations...
+2026-04-16 13:38:43,927 [INFO]    [DEMO MODE] Using mocked regulations
+2026-04-16 13:38:43,928 [INFO] ✅ Step 'scrape' logged to audit trail
+2026-04-16 13:38:43,928 [INFO]    ✅ Found 2 recent regulations
+2026-04-16 13:38:43,929 [INFO] 
+📚 Step 2/4: Ingesting policy into RAG pipeline...
+2026-04-16 13:38:43,929 [INFO]    [DEMO MODE] Using mocked policy chunks
+2026-04-16 13:38:43,940 [INFO] ✅ Step 'rag_ingest' logged to audit trail
+2026-04-16 13:38:43,940 [INFO]    ✅ Indexed 3 policy chunks
+2026-04-16 13:38:43,940 [INFO] 
+🔍 Step 3/4: Analyzing compliance gaps with Llama-3-8B...
+2026-04-16 13:38:43,940 [INFO]    [DEMO MODE] Using mocked policy chunks
+2026-04-16 13:38:43,940 [INFO]    [DEMO MODE] Using mocked analysis
+2026-04-16 13:38:44,942 [INFO] ✅ Step 'analyze' logged to audit trail
+2026-04-16 13:38:44,942 [INFO]    ✅ Analysis complete (confidence: 0.92)
+2026-04-16 13:38:44,942 [INFO] 
+📄 Step 4/4: Generating compliance report...
+2026-04-16 13:38:44,942 [INFO]    [DEMO MODE] Generating mocked report
+2026-04-16 13:38:44,944 [INFO] ✅ Step 'report_generation' logged to audit trail
+2026-04-16 13:38:44,944 [INFO] 
+============================================================
+2026-04-16 13:38:44,944 [INFO] 🎉 Compliance Workflow Complete!
+2026-04-16 13:38:44,944 [INFO]    ⏱️ Total time: 1.02s
+2026-04-16 13:38:44,944 [INFO]    📄 Report: reports/compliance_report_AMF_20260416_133844.md
+2026-04-16 13:38:44,944 [INFO]    🔍 Audit Trail: reports/compliance_report_AMF_20260416_133844_audit.json
+2026-04-16 13:38:44,944 [INFO] ============================================================
+2026-04-16 13:40:18,222 [INFO] 🚀 Initializing CompliAgent
+2026-04-16 13:40:18,223 [INFO]    📄 Policy: data/sample_policy.pdf
+2026-04-16 13:40:18,223 [INFO]    🌐 Regulation Source: DORA
+2026-04-16 13:40:18,223 [INFO]    💾 GPU: CPU (0GB VRAM)
+2026-04-16 13:40:18,223 [INFO]    🤖 Model: Llama-3-8B-Instruct
+2026-04-16 13:40:18,224 [WARNING] ⚠️ No GPU detected. Running in CPU fallback mode (slow).
+2026-04-16 13:40:32,886 [INFO] 🚀 Initializing CompliAgent
+2026-04-16 13:40:32,886 [INFO]    📄 Policy: data/sample_policy.pdf
+2026-04-16 13:40:32,887 [INFO]    🌐 Regulation Source: DORA
+2026-04-16 13:40:32,887 [INFO]    💾 GPU: CPU (0GB VRAM)
+2026-04-16 13:40:32,887 [INFO]    🤖 Model: Llama-3-8B-Instruct
+2026-04-16 13:40:32,887 [WARNING] ⚠️ No GPU detected. Running in CPU fallback mode (slow).
+2026-04-16 13:40:32,887 [INFO] ============================================================
+2026-04-16 13:40:32,887 [INFO] 🔄 Starting Compliance Workflow
+2026-04-16 13:40:32,887 [INFO] ============================================================
+2026-04-16 13:40:32,887 [INFO] 
+📡 Step 1/4: Scraping DORA regulations...
+2026-04-16 13:40:32,887 [INFO]    [DEMO MODE] Using mocked regulations
+2026-04-16 13:40:32,899 [INFO] ✅ Step 'scrape' logged to audit trail
+2026-04-16 13:40:32,900 [INFO]    ✅ Found 2 recent regulations
+2026-04-16 13:40:32,900 [INFO] 
+📚 Step 2/4: Ingesting policy into RAG pipeline...
+2026-04-16 13:40:32,900 [INFO]    [DEMO MODE] Using mocked policy chunks
+2026-04-16 13:40:32,901 [INFO] ✅ Step 'rag_ingest' logged to audit trail
+2026-04-16 13:40:32,901 [INFO]    ✅ Indexed 3 policy chunks
+2026-04-16 13:40:32,901 [INFO] 
+🔍 Step 3/4: Analyzing compliance gaps with Llama-3-8B...
+2026-04-16 13:40:32,901 [INFO]    [DEMO MODE] Using mocked policy chunks
+2026-04-16 13:40:32,901 [INFO]    [DEMO MODE] Using mocked analysis
+2026-04-16 13:40:33,903 [INFO] ✅ Step 'analyze' logged to audit trail
+2026-04-16 13:40:33,903 [INFO]    ✅ Analysis complete (confidence: 0.92)
+2026-04-16 13:40:33,903 [INFO] 
+📄 Step 4/4: Generating compliance report...
+2026-04-16 13:40:33,903 [INFO]    [DEMO MODE] Generating mocked report
+2026-04-16 13:40:33,905 [INFO] ✅ Step 'report_generation' logged to audit trail
+2026-04-16 13:40:33,905 [INFO] 
+============================================================
+2026-04-16 13:40:33,905 [INFO] 🎉 Compliance Workflow Complete!
+2026-04-16 13:40:33,906 [INFO]    ⏱️ Total time: 1.02s
+2026-04-16 13:40:33,906 [INFO]    📄 Report: reports/compliance_report_DORA_20260416_134033.md
+2026-04-16 13:40:33,906 [INFO]    🔍 Audit Trail: reports/compliance_report_DORA_20260416_134033_audit.json
+2026-04-16 13:40:33,906 [INFO] ============================================================
+2026-04-16 13:40:56,921 [INFO] 🚀 Initializing CompliAgent
+2026-04-16 13:40:56,922 [INFO]    📄 Policy: data/sample_policy.pdf
+2026-04-16 13:40:56,922 [INFO]    🌐 Regulation Source: SEC
+2026-04-16 13:40:56,922 [INFO]    💾 GPU: CPU (0GB VRAM)
+2026-04-16 13:40:56,922 [INFO]    🤖 Model: Llama-3-8B-Instruct
+2026-04-16 13:40:56,922 [WARNING] ⚠️ No GPU detected. Running in CPU fallback mode (slow).
+2026-04-16 13:40:56,922 [INFO] ============================================================
+2026-04-16 13:40:56,922 [INFO] 🔄 Starting Compliance Workflow
+2026-04-16 13:40:56,922 [INFO] ============================================================
+2026-04-16 13:40:56,922 [INFO] 
+📡 Step 1/4: Scraping SEC regulations...
+2026-04-16 13:40:56,922 [INFO]    [DEMO MODE] Using mocked regulations
+2026-04-16 13:40:56,923 [INFO] ✅ Step 'scrape' logged to audit trail
+2026-04-16 13:40:56,923 [INFO]    ✅ Found 2 recent regulations
+2026-04-16 13:40:56,923 [INFO] 
+📚 Step 2/4: Ingesting policy into RAG pipeline...
+2026-04-16 13:40:56,924 [INFO]    [DEMO MODE] Using mocked policy chunks
+2026-04-16 13:40:56,924 [INFO] ✅ Step 'rag_ingest' logged to audit trail
+2026-04-16 13:40:56,924 [INFO]    ✅ Indexed 3 policy chunks
+2026-04-16 13:40:56,925 [INFO] 
+🔍 Step 3/4: Analyzing compliance gaps with Llama-3-8B...
+2026-04-16 13:40:56,925 [INFO]    [DEMO MODE] Using mocked policy chunks
+2026-04-16 13:40:56,925 [INFO]    [DEMO MODE] Using mocked analysis
+2026-04-16 13:40:57,926 [INFO] ✅ Step 'analyze' logged to audit trail
+2026-04-16 13:40:57,926 [INFO]    ✅ Analysis complete (confidence: 0.92)
+2026-04-16 13:40:57,926 [INFO] 
+📄 Step 4/4: Generating compliance report...
+2026-04-16 13:40:57,927 [INFO]    [DEMO MODE] Generating mocked report
+2026-04-16 13:40:57,928 [INFO] ✅ Step 'report_generation' logged to audit trail
+2026-04-16 13:40:57,928 [INFO] 
+============================================================
+2026-04-16 13:40:57,928 [INFO] 🎉 Compliance Workflow Complete!
+2026-04-16 13:40:57,929 [INFO]    ⏱️ Total time: 1.01s
+2026-04-16 13:40:57,929 [INFO]    📄 Report: reports/compliance_report_SEC_20260416_134057.md
+2026-04-16 13:40:57,929 [INFO]    🔍 Audit Trail: reports/compliance_report_SEC_20260416_134057_audit.json
+2026-04-16 13:40:57,929 [INFO] ============================================================
+2026-04-16 13:42:33,526 [INFO] 🚀 Initializing CompliAgent
+2026-04-16 13:42:33,539 [INFO]    📄 Policy: data/sample_policy.pdf
+2026-04-16 13:42:33,539 [INFO]    🌐 Regulation Source: ESMA
+2026-04-16 13:42:33,539 [INFO]    💾 GPU: CPU (0GB VRAM)
+2026-04-16 13:42:33,539 [INFO]    🤖 Model: Llama-3-8B-Instruct
+2026-04-16 13:42:33,539 [WARNING] ⚠️ No GPU detected. Running in CPU fallback mode (slow).
+2026-04-16 13:42:33,540 [INFO] ============================================================
+2026-04-16 13:42:33,540 [INFO] 🔄 Starting Compliance Workflow
+2026-04-16 13:42:33,540 [INFO] ============================================================
+2026-04-16 13:42:33,540 [INFO] 
+📡 Step 1/4: Scraping ESMA regulations...
+2026-04-16 13:42:33,540 [INFO]    [DEMO MODE] Using mocked regulations
+2026-04-16 13:42:33,541 [INFO] ✅ Step 'scrape' logged to audit trail
+2026-04-16 13:42:33,541 [INFO]    ✅ Found 2 recent regulations
+2026-04-16 13:42:33,541 [INFO] 
+📚 Step 2/4: Ingesting policy into RAG pipeline...
+2026-04-16 13:42:33,541 [INFO]    [DEMO MODE] Using mocked policy chunks
+2026-04-16 13:42:33,542 [INFO] ✅ Step 'rag_ingest' logged to audit trail
+2026-04-16 13:42:33,542 [INFO]    ✅ Indexed 3 policy chunks
+2026-04-16 13:42:33,542 [INFO] 
+🔍 Step 3/4: Analyzing compliance gaps with Llama-3-8B...
+2026-04-16 13:42:33,542 [INFO]    [DEMO MODE] Using mocked policy chunks
+2026-04-16 13:42:33,542 [INFO]    [DEMO MODE] Using mocked analysis
+2026-04-16 13:42:34,544 [INFO] ✅ Step 'analyze' logged to audit trail
+2026-04-16 13:42:34,544 [INFO]    ✅ Analysis complete (confidence: 0.92)
+2026-04-16 13:42:34,544 [INFO] 
+📄 Step 4/4: Generating compliance report...
+2026-04-16 13:42:34,545 [INFO]    [DEMO MODE] Generating mocked report
+2026-04-16 13:42:34,546 [INFO] ✅ Step 'report_generation' logged to audit trail
+2026-04-16 13:42:34,546 [INFO] 
+============================================================
+2026-04-16 13:42:34,546 [INFO] 🎉 Compliance Workflow Complete!
+2026-04-16 13:42:34,546 [INFO]    ⏱️ Total time: 1.01s
+2026-04-16 13:42:34,546 [INFO]    📄 Report: reports/compliance_report_ESMA_20260416_134234.md
+2026-04-16 13:42:34,546 [INFO]    🔍 Audit Trail: reports/compliance_report_ESMA_20260416_134234_audit.json
+2026-04-16 13:42:34,546 [INFO] ============================================================
+2026-04-16 13:43:02,982 [INFO] HTTP Request: GET https://api.gradio.app/gradio-messaging/en "HTTP/1.1 200 OK"
+2026-04-16 13:43:11,441 [INFO] 🚀 Initializing CompliAgent
+2026-04-16 13:43:11,442 [INFO]    📄 Policy: data/sample_policy.pdf
+2026-04-16 13:43:11,442 [INFO]    🌐 Regulation Source: AMF
+2026-04-16 13:43:11,442 [INFO]    💾 GPU: CPU (0GB VRAM)
+2026-04-16 13:43:11,442 [INFO]    🤖 Model: Llama-3-8B-Instruct
+2026-04-16 13:43:11,442 [WARNING] ⚠️ No GPU detected. Running in CPU fallback mode (slow).
+2026-04-16 13:43:11,442 [INFO] ============================================================
+2026-04-16 13:43:11,442 [INFO] 🔄 Starting Compliance Workflow
+2026-04-16 13:43:11,442 [INFO] ============================================================
+2026-04-16 13:43:11,442 [INFO] 
+📡 Step 1/4: Scraping AMF regulations...
+2026-04-16 13:43:11,442 [INFO]    [DEMO MODE] Using mocked regulations
+2026-04-16 13:43:11,443 [INFO] ✅ Step 'scrape' logged to audit trail
+2026-04-16 13:43:11,443 [INFO]    ✅ Found 2 recent regulations
+2026-04-16 13:43:11,443 [INFO] 
+📚 Step 2/4: Ingesting policy into RAG pipeline...
+2026-04-16 13:43:11,443 [INFO]    [DEMO MODE] Using mocked policy chunks
+2026-04-16 13:43:11,444 [INFO] ✅ Step 'rag_ingest' logged to audit trail
+2026-04-16 13:43:11,444 [INFO]    ✅ Indexed 3 policy chunks
+2026-04-16 13:43:11,444 [INFO] 
+🔍 Step 3/4: Analyzing compliance gaps with Llama-3-8B...
+2026-04-16 13:43:11,444 [INFO]    [DEMO MODE] Using mocked policy chunks
+2026-04-16 13:43:11,444 [INFO]    [DEMO MODE] Using mocked analysis
+2026-04-16 13:43:12,445 [INFO] ✅ Step 'analyze' logged to audit trail
+2026-04-16 13:43:12,445 [INFO]    ✅ Analysis complete (confidence: 0.92)
+2026-04-16 13:43:12,446 [INFO] 
+📄 Step 4/4: Generating compliance report...
+2026-04-16 13:43:12,446 [INFO]    [DEMO MODE] Generating mocked report
+2026-04-16 13:43:12,447 [INFO] ✅ Step 'report_generation' logged to audit trail
+2026-04-16 13:43:12,447 [INFO] 
+============================================================
+2026-04-16 13:43:12,447 [INFO] 🎉 Compliance Workflow Complete!
+2026-04-16 13:43:12,447 [INFO]    ⏱️ Total time: 1.01s
+2026-04-16 13:43:12,447 [INFO]    📄 Report: reports/compliance_report_AMF_20260416_134312.md
+2026-04-16 13:43:12,447 [INFO]    🔍 Audit Trail: reports/compliance_report_AMF_20260416_134312_audit.json
+2026-04-16 13:43:12,447 [INFO] ============================================================
