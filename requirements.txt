@@ -1,0 +1,34 @@
+# Core AI Agent Frameworks
+crewai>=0.51.0
+langchain>=0.2.0
+langgraph>=0.1.0
+
+# Vector Database
+qdrant-client>=1.9.0
+
+# Document Processing & Parsing
+unstructured[pdf]>=0.14.0
+pdfplumber>=0.11.0
+
+# UI/Gradio Interface
+gradio>=4.36.0
+
+# ML/DL Backends with AMD ROCm Compatibility
+# transformers: Hugging Face library, works with ROCm via PyTorch
+transformers>=4.41.0
+# optimum-amd: AMD-optimized version of Optimum for better ROCm performance
+optimum-amd>=1.19.0
+# accelerate: Hugging Face Accelerate, supports ROCm devices
+accelerate>=0.30.0
+# vllm: High-throughput LLM inference engine with ROCm support
+vllm>=0.5.0
+
+# Data Validation & Environment
+pydantic>=2.7.0
+python-dotenv>=1.0.0
+
+# Additional ROCm/AMD Compatibility Notes:
+# - Ensure PyTorch is installed with ROCm support: pip install torch --index-url https://download.pytorch.org/whl/rocm6.0
+# - optimum-amd provides optimizations specifically for AMD GPUs
+# - vllm has native ROCm support for efficient LLM serving on AMD hardware
+# - Set HIP_VISIBLE_DEVICES environment variable to control GPU visibility on AMD systems
