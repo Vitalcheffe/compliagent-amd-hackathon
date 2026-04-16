@@ -15,7 +15,7 @@ AMD ROCm Configuration:
     - VLLM_USE_ROCM: Enable vLLM ROCm backend (1)
 """
 
-from pydantic import BaseSettings
+from pydantic_settings import BaseSettings
 from typing import Optional
 import os
 

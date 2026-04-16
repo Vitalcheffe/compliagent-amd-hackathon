@@ -1,0 +1,26 @@
+{
+  "timestamp": "2026-04-16T11:50:02.688769",
+  "policy": "data/sample_policy.pdf",
+  "regulation": "AMF",
+  "analysis": {
+    "analysis": "## Compliance Gap Analysis for AMF\n\n### Critical Findings\n1. **Capital Requirements**: Your current 15% CET1 ratio exceeds the new 13.5% minimum. \u2705 Compliant\n2. **DORA Readiness**: Quarterly ICT assessments align with new technical standards. \u2705 Compliant\n3. **Reporting Timeline**: New monthly reporting deadline (T+5) requires process adjustment. \u26a0\ufe0f Action Required\n\n### Recommended Actions\n- Update internal reporting calendar by May 30, 2026\n- Document board approval of revised risk appetite statement\n- Schedule DORA penetration test for Q3 2026\n\n**Overall Compliance Score**: 92/100",
+    "citations": [
+      {
+        "source": "Policy.pdf",
+        "page": 12,
+        "text": "CET1 ratio maintained above 15%"
+      },
+      {
+        "source": "AMF REG-2026-001",
+        "section": "3.2"
+      }
+    ],
+    "confidence": 0.92
+  },
+  "gpu_info": {
+    "available": false,
+    "device_name": "CPU",
+    "vram_gb": 0,
+    "is_rocm": false
+  }
+}

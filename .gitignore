@@ -1,57 +1,67 @@
 ```
-# Python
-__pycache__/
+# Build artifacts and compiled files
 *.pyc
-*.pyo
-*.pyd
-.Python
-env/
-venv/
+__pycache__/
+
+# Dependencies
 .venv/
-.ENV
-.env
-.env.*
-.env.local
-.env.dev
-.env.prod
-.python-version
-.pytest_cache/
-.mypy_cache/
-.coverage
-coverage/
-htmlcov/
+venv/
+node_modules/
 
-# Build artifacts
-dist/
-build/
-*.egg-info/
-.sass-cache/
-.well-known/
-*.so
-
-# Logs
+# Logs and temporary files
 *.log
-*.log.*
+*.tmp
+*.swp
 
-# OS generated files
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
+# Environment files
+.env
+.env.local
+*.env.*
 
-# IDE
+# Editors
 .vscode/
 .idea/
-*.swp
-*.swo
-*.tmp
 
-# Testing
-.coverage
+# Coverage reports
+coverage/
 htmlcov/
+.coverage
+
+# Distribution files
+dist/
+build/
+target/
+
+# Cache directories
+.mypy_cache/
 .pytest_cache/
-.hypothesis/
+.gradle/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Compressed files
+*.zip
+*.gz
+*.tar
+*.tgz
+*.bz2
+*.xz
+*.7z
+*.rar
+*.zst
+*.lz4
+*.lzh
+*.cab
+*.arj
+*.rpm
+*.deb
+*.Z
+*.lz
+*.lzo
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.tar.zst
 ```
