@@ -1,34 +1,38 @@
-# Core AI Agent Frameworks
-crewai>=0.51.0
-langchain>=0.2.0
-langgraph>=0.1.0
+# AMD ROCm-Optimized Dependencies for CompliAgent
+# 🏆 AMD Developer Hackathon 2026 - AI Compliance Agent
 
-# Vector Database
-qdrant-client>=1.9.0
+# === Multi-Agent Orchestration ===
+crewai==0.32.0          # Multi-agent framework for regulatory workflows
+langchain==0.1.20       # LLM orchestration and chains
+langgraph==0.0.64       # Complex agent workflow control
 
-# Document Processing & Parsing
-unstructured[pdf]>=0.14.0
-pdfplumber>=0.11.0
+# === Vector Database & RAG ===
+qdrant-client==1.9.0    # ROCm-compatible vector DB for semantic search
 
-# UI/Gradio Interface
-gradio>=4.36.0
+# === Document Processing ===
+unstructured[pdf]==0.12.6  # PDF/text extraction for regulatory docs
+pdfplumber==0.11.0         # High-fidelity PDF parsing
 
-# ML/DL Backends with AMD ROCm Compatibility
-# transformers: Hugging Face library, works with ROCm via PyTorch
-transformers>=4.41.0
-# optimum-amd: AMD-optimized version of Optimum for better ROCm performance
-optimum-amd>=1.19.0
-# accelerate: Hugging Face Accelerate, supports ROCm devices
-accelerate>=0.30.0
-# vllm: High-throughput LLM inference engine with ROCm support
-vllm>=0.5.0
+# === Frontend Demo ===
+gradio==4.29.0        # Judge-friendly demo UI
 
-# Data Validation & Environment
-pydantic>=2.7.0
-python-dotenv>=1.0.0
+# === LLM & Transformers (AMD ROCm Optimized) ===
+transformers==4.41.0      # Hugging Face transformers
+optimum-amd==1.18.0       # ⚡ AMD ROCm optimizations for PyTorch/Transformers
+accelerate==0.30.1        # Multi-GPU training/inference support
+vllm==0.4.2               # ⚡ High-throughput LLM serving with ROCm support
+                            # Note: vLLM ROCm backend requires MI300X for best performance
 
-# Additional ROCm/AMD Compatibility Notes:
-# - Ensure PyTorch is installed with ROCm support: pip install torch --index-url https://download.pytorch.org/whl/rocm6.0
-# - optimum-amd provides optimizations specifically for AMD GPUs
-# - vllm has native ROCm support for efficient LLM serving on AMD hardware
-# - Set HIP_VISIBLE_DEVICES environment variable to control GPU visibility on AMD systems
+# === Core Utilities ===
+pydantic==2.7.1       # Data validation and settings management
+python-dotenv==1.0.1  # Environment variable management (.env files)
+
+# === Development & Testing ===
+pytest==8.2.0         # Unit testing framework
+ruff==0.4.4           # Fast Python linter and formatter
+
+# === AMD ROCm Compatibility Notes ===
+# - optimum-amd provides AMD-specific optimizations for transformers
+# - vLLM supports ROCm 6.0+ for MI250X/MI300X GPUs
+# - Set HIP_VISIBLE_DEVICES before running on AMD Cloud
+# - Use HSA_OVERRIDE_GFX_VERSION=10.3.0 for MI300X compatibility
